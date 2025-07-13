@@ -1,0 +1,56 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [ "CWAgent", "cpu_usage_idle", "InstanceId", "i-064e648d33670e23b", "cpu", "cpu-total" ],
+          [ "CWAgent", "cpu_usage_user", "InstanceId", "i-064e648d33670e23b", "cpu", "cpu-total" ],
+          [ "CWAgent", "cpu_usage_system", "InstanceId", "i-064e648d33670e23b", "cpu", "cpu-total" ]
+        ],
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "title": "CPU Usage (%)",
+        "period": 60
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [ "CWAgent", "mem_used_percent", "InstanceId", "i-064e648d33670e23b" ]
+        ],
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "title": "Memory Usage (%)",
+        "period": 60
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 6,
+      "width": 24,
+      "height": 6,
+      "properties": {
+        "metrics": [
+          [ "CWAgent", "diskio_io_time", "InstanceId", "i-064e648d33670e23b", "name", "xvda" ],
+          [ "CWAgent", "diskio_io_time", "InstanceId", "i-064e648d33670e23b", "name", "xvda1" ]
+        ],
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "title": "Disk IO Time (ms)",
+        "period": 60
+      }
+    }
+  ]
+}
+
